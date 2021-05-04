@@ -1,25 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-/*slide header*/
-.quote{
+
+/*Default*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 400;
+    letter-spacing: .01em;
+    color: #828590;
+    background-color: #1d1d23;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+h1, h2, h3, h4, h5, h6, [class*='heading-'] {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
-    font-family: Yanone Kaffeesatz;
+    letter-spacing: 0;
+    font-family: "Yanone Kaffeesatz", "sans-serif";
+    color: #ffffff;
 }
 
-.tales {
-    width: 100%;
-}
-.carousel-inner{
-    width:100%;
-    max-height: 100% !important;
+h2 {
+    display: block;
+    font-family: "Yanone Kaffeesatz", "sans-serif";
+    color: #ffffff;
+    font-weight: 700;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
-h5 .author{
-    font-family: "Nova Mono", sans-serif !important;
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class*='heading-'] a {
+    color: inherit;
 }
 
-/*navbar header*/
+p {
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-size: 16px;
+}
+
+/*Nav Menu*/
 .bg-dark{
     background-color: #1d1d23 !important;
 }
@@ -48,6 +86,7 @@ h5 .author{
 .dropdown-menu a:hover{
     color: white !important;
 }
+
 /*footer*/
 ul {
     margin: 0px;
@@ -209,3 +248,524 @@ ul {
     font-size: 14px;
     color: #878787;
 }
+
+/*Breadcrumbs*/
+.breadcrumbs-path {
+    padding: 15px 0;
+    margin-left: -33px;
+    margin-right: -33px;
+}
+
+.breadcrumbs-path > * {
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.breadcrumbs-path li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.breadcrumbs-path li::after {
+    position: absolute;
+    top: 55%;
+    right: -12px;
+    font-size: 19px;
+    line-height: 1;
+    font-style: normal;
+    transform: translate3d(0, -50%, 0);
+}
+
+.breadcrumbs-path li:last-child:after {
+    display: none;
+}
+
+.breadcrumbs-modern {
+    text-align: left;
+    padding: 50px 0 20px 0;
+}
+
+.breadcrumbs-modern-body {
+    padding: 50px 0 20px 0;
+}
+
+.breadcrumbs-modern-subtitle {
+    color: #ffffff;
+}
+
+.breadcrumbs-modern-path a, .breadcrumbs-modern-path a:active, .breadcrumbs-modern-path a:focus {
+    color: #ffffff;
+}
+
+.breadcrumbs-modern-path li::after {
+    color: #ffffff;
+}
+
+.breadcrumbs-modern-path a:hover {
+    color: #f99200;
+}
+
+.breadcrumbs-modern-path li.active {
+    color: #ffffff;
+}
+
+* + .breadcrumbs-modern-title {
+    margin-top: 30px;
+}
+
+a.home, a.home:active, a.home:hover, a.home:focus  {
+    text-decoration: none;
+}
+
+.section-sm, .section-md, .section-lg, .section-xl {
+    padding: 50px 0;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.bg-default {
+    background-color: #1d1d23;
+    background-size: cover;
+}
+
+[class*='bg-'] {
+    background-size: cover;
+    background-position: center;
+}
+
+.unit-body {
+    flex: 0 1 auto;
+}
+
+.unit-spacing-md {
+    margin-bottom: -10px;
+    margin-left: -20px;
+}
+
+.unit {
+    display: flex;
+    flex: 0 1 100%;
+    margin-bottom: -20px;
+    margin-left: -30px;
+}
+
+.unit-spacing-sm > * {
+    margin-bottom: 6px;
+    margin-left: 16px;
+}
+
+.unit-spacing-md > * {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.unit-left, .unit-right {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.unit > * {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+
+/*Contact Us*/
+.rd-form {
+    position: relative;
+    text-align: left;
+}
+
+* + .rd-form {
+    margin-top: 30px;
+}
+
+.btn-primary, .btn-primary:focus {
+    color: #ffffff;
+    background-color: #3e3ef5;
+    border-color: #3e3ef5;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    color: #ffffff;
+    background-color: #f99200;
+    border-color: #f99200;
+}
+
+.group-center {
+    margin-top: 30px;
+}
+
+.contacts-info a, .contacts-info a:focus, .contacts-info a:active {
+    color: inherit;
+}
+
+a[href*='tel'], a[href*='mailto'] {
+    white-space: nowrap;
+}
+
+
+
+a, a:focus, a:active, a:hover {
+    text-decoration: none;
+}
+
+
+
+.list-inline > li {
+    display: inline-block;
+}
+
+.list-social .icon {
+    font-size: 20px;
+}
+
+.icon::before {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-transform: none;
+}
+
+.list-social.icon.a:hover {
+    color: #ffb041;
+}
+
+.list-social > * {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.list-social {
+    font-size: 0;
+    line-height: 0;
+    transform: translate3d(0, -10px, 0);
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/*About Us*/
+.section {
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-10 {
+    margin-bottom: -10px;
+}
+
+.row-30 {
+    margin-bottom: -30px;
+}
+
+.row-40 {
+    margin-bottom: -40px;
+}
+
+.row-50 {
+    margin-bottom: -50px;
+}
+
+.row-50 > * {
+    margin-bottom: 50px;
+}
+
+.text-width-xl-90 {
+    max-width: 90%;
+}
+
+.bg-gray-700 {
+    color: #aeb1be;
+    background-color: #29293a;
+}
+
+
+.box-icon-modern {
+    text-align: center;
+}
+
+.box-icon-modern-icon {
+    position: relative;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 66px;
+    border-radius: 50%;
+    color: #f99200;
+    background: transparent;
+    border: 2px solid rgba(243, 243, 249, 0.1);
+    transition: all .2s ease-in-out;
+    z-index: 1;
+}
+
+.box-icon-modern-icon::after {
+    position: absolute;
+    content: '';
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    border-radius: inherit;
+    border: 2px solid #f3f3f9;
+    transform: scale(0.8);
+    transition: all .25s ease;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.mdi {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.contacts-info .icon {
+    vertical-align: middle;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.box-icon-modern-title {
+    margin-top: 20px;
+}
+
+.box-icon-modern-text {
+    margin-top: 10px;
+}
+
+.mdi-book-multiple:before {
+    content: "\f1b1";
+}
+
+.mdi-account-multiple:before {
+    content: "\f10d";
+}
+
+.mdi-refresh:before {
+    content: "\f53f";
+}
+
+.mdi-history:before {
+    content: "\f3cd";
+}
+
+.team-modern {
+    position: relative;
+    text-align: center;
+}
+
+.box-sm {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-modern-figure {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.team-modern-figure img {
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.quote-modern {
+    text-align: center;
+    overflow: hidden;
+}
+
+.contacts-info {
+    text-align: center;
+}
+
+* + .contacts-info {
+    margin-top: 20px;
+}
+
+
+.quote-modern-figure {
+    position: relative;
+    z-index: 1;
+}
+
+.quote-modern-figure::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 2000%;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-top: 1px solid #6a6a75;
+    pointer-events: none;
+    transform: translate3d(-50%, 0, 0);
+    z-index: -1;
+}
+
+.quote-modern-figure img {
+    border-radius: 50%;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.quote-modern .unit-body {
+    padding-top: 2px;
+}
+
+
+
+.quote-modern-author {
+    color: #f99200;
+}
+
+.quote-modern-text {
+    position: relative;
+    padding-top: 10px;
+    color: #f3f3f9;
+}
+
+.quote-modern-text::before {
+    position: absolute;
+    content: '\f373';
+    top: -30px;
+    left: 50%;
+    font-size: 90px;
+    line-height: 1;
+    font-family: "Material Design Icons";
+    color: rgba(255, 255, 255, 0.07);
+    transform: rotate(180deg) translate3d(50%, 0, 0);
+}
+
+.google-map {
+    align-items: center;
+
+}
+
+/*Media*/
+@media (min-width: 1200px) {
+    .breadcrumbs-modern-body {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+    h1, .heading-1 {
+        font-size: 68px;
+    }
+    h2, .heading-2 {
+        font-size: 48px;
+    }
+    .section-xl {
+        padding: 100px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .breadcrumbs-modern-body {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    h1, .heading-1 {
+        font-size: 60px;
+    }
+    h2, .heading-2 {
+        font-size: 42px;
+    }
+    h4, .heading-4 {
+        font-size: 28px;
+    }
+    .section-xl {
+        padding: 90px 0;
+    }
+    .row-lg-60 {
+        margin-bottom: -60px;
+    }
+    .row-lg-60 > * {
+        margin-bottom: 60px;
+    }
+    .google-map {
+        height: 460px;
+    }
+    .box-icon-modern-icon {
+        font-size: 38px;
+        width: 90px;
+        height: 90px;
+        line-height: 86px;
+    }
+}
+
+@media (min-width: 768px) {
+    .breadcrumbs-modern-body {
+        padding-top: 80px;
+    }
+    h1, .heading-1 {
+        font-size: 50px;
+    }
+    h2, .heading-2 {
+        font-size: 36px;
+    }
+    h5, .heading-5 {
+        font-size: 20px;
+    }
+    .breadcrumbs-path {
+        padding: 30px 0;
+    }
+    * + .rd-form {
+        margin-top: 48px;
+    }
+    .section-xl {
+        padding: 80px 0;
+    }
+    .text-md-left {
+        text-align: left !important;
+    }
+    h2 + p {
+        margin-top: 26px;
+    }
+    .contacts-info {
+        text-align: left;
+    }
+    .contacts-info .icon {
+        line-height: 28px;
+    }
+}
+
